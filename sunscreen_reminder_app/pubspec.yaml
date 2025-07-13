@@ -1,0 +1,49 @@
+name: sunscreen_reminder_app
+description: My Skincare Harmony - A mobile app to remind users to reapply sunscreen based on UV data and location, plus skincare cabinet management.
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  location: ^4.4.0
+  http: ^0.13.6
+  intl: ^0.18.1
+  flutter_local_notifications: ^16.3.2
+  # Authentication and Database
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  google_sign_in: ^6.1.5
+  # Local Storage
+  sqflite: ^2.3.0
+  shared_preferences: ^2.2.2
+  # Image handling
+  image_picker: ^1.0.4
+  cached_network_image: ^3.3.0
+  # UI Enhancements
+  animations: ^2.0.8
+  lottie: ^2.7.0
+  # Barcode scanning
+  mobile_scanner: ^3.5.2
+  # State management
+  provider: ^6.1.1
+  # Permissions
+  permission_handler: ^11.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/
